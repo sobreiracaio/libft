@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
+/*   By: admin <admin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 18:26:06 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/04/23 15:18:50 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/04/23 19:49:49 by admin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,4 +47,8 @@ char *ft_strjoin(char const *s1, char const *s2);
 char *ft_strtrim(char const *s1, char const *set);
 char **ft_split(char const *s, char c);
 char *ft_itoa(int n);
+void ft_putchar_fd(char c, int fd);
+void ft_putstr_fd(char *s, int fd);
+void ft_putendl_fd(char *s, int fd);
+void ft_putnbr_fd(int n, int fd);
 #endif
