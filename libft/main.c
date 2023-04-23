@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
+/*   By: admin <admin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 18:53:31 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/04/18 21:29:03 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/04/21 19:16:42 by admin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,8 @@ int main (void)
    
    printf ("Resultado de strnstr: %s\n", ft_strnstr(str3,str4,2));
    printf ("Resultado de Calloc e: %p\n", ft_calloc(5, 5));
+
+   printf("Resultao de strjoin e: %s\n", ft_strjoin("","def"));
    
 }
 
