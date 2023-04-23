@@ -6,7 +6,7 @@
 /*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 18:53:31 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/04/18 21:29:03 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/04/23 14:59:10 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,11 @@ int main (void)
    
    printf ("Resultado de strnstr: %s\n", ft_strnstr(str3,str4,2));
    printf ("Resultado de Calloc e: %p\n", ft_calloc(5, 5));
+
+   printf("Resultado de strjoin e: %s\n", ft_strjoin("","def"));
+   
+
+   
    
 }
 
