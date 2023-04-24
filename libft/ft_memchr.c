@@ -6,7 +6,7 @@
 /*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 17:03:33 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/04/19 17:52:00 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/04/24 20:57:43 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		if (source[i] == c)
+		if (source[i] == (char)c)
 		{
 			return ((void *)source + i);
 		}
