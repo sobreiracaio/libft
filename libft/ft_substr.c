@@ -6,7 +6,7 @@
 /*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 19:02:03 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/04/19 21:19:41 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/04/24 20:15:15 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char			*substring;
-	size_t	i;
-	size_t	j;
+	char		*substring;
+	size_t		i;
+	size_t		j;
 
 	i = 0;
 	j = 0;
@@ -27,7 +27,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	}
 	while (s[i] != '\0')
 	{
-		if( (i >= start && j < len))
+		if ((i >= start && j < len))
 		{
 			substring[j] = s[i];
 			j++;

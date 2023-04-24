@@ -6,17 +6,16 @@
 /*   By: admin <admin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/23 18:40:42 by admin             #+#    #+#             */
-/*   Updated: 2023/04/23 18:54:31 by admin            ###   ########.fr       */
+/*   Updated: 2023/04/24 20:27:06 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putstr_fd(char *s, int fd)
+void	ft_putstr_fd(char *s, int fd)
 {
-    int size;
-    
-    size = ft_strlen(s);
-      
-    write(fd, s, size);   
+	int	size;
+
+	size = ft_strlen(s);
+	write(fd, s, size);
 }
