@@ -6,7 +6,7 @@
 /*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 17:57:13 by admin             #+#    #+#             */
-/*   Updated: 2023/04/24 20:08:32 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/04/25 20:18:20 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int		j;
 	char	*sum;
 
-	i = 0;
+	i = -1;
 	j = 0;
 	sum = (char *)malloc ((ft_strlen(s1) + ft_strlen(s2)) + 1);
 	if (!sum || (!s1 && !s2))

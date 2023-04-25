@@ -6,7 +6,7 @@
 /*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 18:26:06 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/04/24 20:20:20 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/04/25 17:13:56 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stddef.h>
 # include <unistd.h>
 # include <stdio.h>
+# include <limits.h>
 
 size_t	ft_strlen(const char *s);
 int		ft_isalpha(int c);
