@@ -7,11 +7,11 @@ PART1 = ft_strlen.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c \
 PART2 = ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_putchar_fd.c \
 	    ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_striteri.c ft_strmapi.c
 
-BONUS = 
+BONUS = ft_lstnew.c
 
 
 
-SRC = ${PART1} ${PART2}
+SRC = ${PART1} ${PART2} ${BONUS}
 OBJS = ${SRC:.c=.o}
 HEADER = libft.h
 INCLUDE = -I .

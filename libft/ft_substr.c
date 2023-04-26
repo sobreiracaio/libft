@@ -6,7 +6,7 @@
 /*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 19:02:03 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/04/25 20:38:44 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/04/26 18:39:17 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,28 +14,26 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char		*substring;
-	size_t		i;
-	size_t		j;
+	char	*substr;
+	size_t	str_size;
 
-	i = 0;
-	j = 0;
-	if (len > ft_strlen(s))
-		len = ft_strlen(s);
-	substring = (char *)malloc(len + 1);
-	if (substring == NULL)
-	{
+	if (!s)
 		return (NULL);
-	}
-	while (s[i] != '\0')
+	str_size = ft_strlen(s);
+	if (str_size < start)
 	{
-		if ((i >= start && j < len))
-		{
-			substring[j] = s[i];
-			j++;
-		}
-		i++;
+		substr = (char *)malloc(sizeof(char) * 1);
+		if (!substr)
+			return (NULL);
+		substr[0] = '\0';
+		return (substr);
 	}
-	substring[j] = '\0';
-	return (substring);
+	if (len > str_size - start)
+		len = str_size - start;
+	substr = (char *)malloc(sizeof(char) * (len + 1));
+	if (!substr)
+		return (NULL);
+	ft_memcpy(substr, s + start, len);
+	substr[len] = '\0';
+	return (substr);
 }

@@ -6,7 +6,7 @@
 /*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/15 11:32:34 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/04/25 19:31:55 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/04/26 18:44:00 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	char		*dest_c;
 	const char	*src_c;
 	size_t		i;
-	
+
 	if (dest == NULL && src == NULL)
 		return (0);
 	dest_c = (char *)dest;

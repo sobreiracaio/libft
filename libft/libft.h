@@ -6,7 +6,7 @@
 /*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 18:26:06 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/04/25 17:13:56 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/04/26 18:58:38 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,4 +52,9 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+typedef struct s_list
+{
+void *content;
+struct s_list *next;
+} t_list;
 #endif

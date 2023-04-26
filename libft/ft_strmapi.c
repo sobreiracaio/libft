@@ -6,7 +6,7 @@
 /*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 17:17:01 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/04/24 20:44:13 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/04/26 18:43:29 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,11 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char			*str;
 	char			*result;
 
+	if (!s || !(*s))
+		return (ft_strdup(""));
 	str = (char *)s;
 	result = (char *)malloc(sizeof(char) * ft_strlen(str) + 1);
-	if (!s || !(*s) || !result)
+	if (!result)
 		return (NULL);
 	i = 0;
 	while (str[i])
