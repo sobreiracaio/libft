@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/26 19:46:55 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/04/27 19:15:26 by crocha-s         ###   ########.fr       */
+/*   Created: 2023/04/27 19:50:44 by crocha-s          #+#    #+#             */
+/*   Updated: 2023/04/27 19:55:02 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstnew(void *content)
+int ft_lstsize(t_list *lst)
 {
-	t_list *element;
+	int i;
 	
-	element = (t_list *)malloc(sizeof(*element));
-	if (!element)
-		return (NULL);
-	element->content = content;
-	element->next = NULL;
-	return (element);
+	i = 0;
+	while (lst != NULL)
+	{
+		lst = lst->next;
+		i++;
+	}
+	return i;
 }
-
