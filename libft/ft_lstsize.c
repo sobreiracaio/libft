@@ -6,21 +6,21 @@
 /*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 19:50:44 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/04/27 19:55:02 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/04/28 18:38:56 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_lstsize(t_list *lst)
+int	ft_lstsize(t_list *lst)
 {
-	int i;
-	
+	int	i;
+
 	i = 0;
 	while (lst != NULL)
 	{
 		lst = lst->next;
 		i++;
 	}
-	return i;
+	return (i);
 }
