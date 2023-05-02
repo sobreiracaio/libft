@@ -6,7 +6,7 @@
 /*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 17:03:33 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/04/24 20:57:43 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/05/02 17:23:57 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,9 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+
+// int main ()
+// {
+// 	 char dest_n[8];
+//      printf ("Resultado de memchr e: %p\n", ft_memchr(dest_n, 'n', 10));
+// }

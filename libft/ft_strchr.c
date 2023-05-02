@@ -6,7 +6,7 @@
 /*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 18:44:55 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/04/19 18:23:51 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/05/02 17:25:56 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,9 @@ char	*ft_strchr(const char *s, int c)
 	else
 		return (NULL);
 }
+
+// int main()
+// {
+// 	char *str1 = "bgdfgadsdf";
+// 	printf ("Resultado de strchr e: %s\n", ft_strchr(str1, 'a'));
+// }

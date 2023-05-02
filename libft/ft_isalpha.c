@@ -6,7 +6,7 @@
 /*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 20:02:15 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/04/18 19:04:16 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/05/02 17:10:24 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,3 +22,8 @@ int	ft_isalpha(int c)
 	}
 	return (0);
 }
+
+// int main ()
+// {
+// 	printf ("E alfabetico?: %i\n", ft_isalpha('3'));
+// }

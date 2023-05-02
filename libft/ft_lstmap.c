@@ -6,7 +6,7 @@
 /*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 18:01:06 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/04/28 18:53:10 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/05/02 19:35:22 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,3 +40,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (first);
 }
+
+// int main()
+// {
+//	
+// }

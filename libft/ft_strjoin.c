@@ -6,7 +6,7 @@
 /*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 17:57:13 by admin             #+#    #+#             */
-/*   Updated: 2023/04/25 20:18:20 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/05/02 17:30:09 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	sum[i] = '\0';
 	return (sum);
 }
+
+// int main ()
+// {
+// 	 printf("Resultado de strjoin e: %s\n", ft_strjoin("","def"));
+// }

@@ -6,7 +6,7 @@
 /*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 17:54:18 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/04/19 18:27:04 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/05/02 19:38:01 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,8 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
+
+// int main ()
+// {
+// 	printf ("diferenca entre s1 e s2: %i\n", ft_strncmp("Portoc", "PortoC",6));
+// }

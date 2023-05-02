@@ -6,7 +6,7 @@
 /*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 19:28:20 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/04/19 18:32:04 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/05/02 17:28:08 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,10 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (0);
 }
+
+// int main ()
+// {
+// 	char *str3 = "aseqwwasdaweavbnasdaweasase";
+//    char *str4 = "vbn";
+//      printf ("Resultado de strnstr: %s\n", ft_strnstr(str3,str4,2));
+// }

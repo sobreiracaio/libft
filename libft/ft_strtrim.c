@@ -6,7 +6,7 @@
 /*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 19:19:59 by admin             #+#    #+#             */
-/*   Updated: 2023/04/25 19:13:40 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/05/02 18:53:33 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	str = ft_substr(s1, i, len + 1);
 	return (str);
 }
+
+// int main()
+// {
+// 	printf("Resultado de strtrim: %s\n", ft_strtrim("abcdefabc", "abc"));
+// }

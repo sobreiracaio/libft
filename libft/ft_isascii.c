@@ -6,7 +6,7 @@
 /*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 21:18:42 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/04/18 19:05:59 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/05/02 17:11:39 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,3 +22,8 @@ int	ft_isascii(int c)
 	}
 	return (0);
 }
+
+// int main ()
+// {
+// 	printf ("Esta na tabela ascii?: %i\n", ft_isascii(')'));
+// }

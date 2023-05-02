@@ -6,7 +6,7 @@
 /*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 17:46:33 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/04/18 20:52:45 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/05/02 17:12:49 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,3 +22,8 @@ int	ft_tolower(int c)
 	}
 	return (c);
 }
+
+// int main ()
+// {
+// 	 printf ("A minuscula : %i\n", ft_tolower('B'));
+// }

@@ -6,7 +6,7 @@
 /*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/15 12:52:58 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/04/26 18:44:49 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/05/02 17:44:20 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,3 +39,10 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
+// int main ()
+// {
+// 	char src[] = "Hello, world!";
+// 	char dest[6];	
+// 	printf("O resultado de memmove e: %p\n", ft_memmove(dest, src, 5));
+// }

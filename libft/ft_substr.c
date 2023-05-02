@@ -6,7 +6,7 @@
 /*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 19:02:03 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/04/26 18:39:17 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/05/02 18:07:20 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,3 +37,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	substr[len] = '\0';
 	return (substr);
 }
+
+// int main ()
+// {
+// 	printf("O resultado de substr e: %s\n", ft_substr("abcdef", 2 , 4));
+// }

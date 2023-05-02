@@ -6,7 +6,7 @@
 /*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 18:41:29 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/04/18 20:37:25 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/05/02 17:20:12 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,10 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	}
 	return (ft_strlen (src));
 }
+
+// int main ()
+// {
+// 	char dest[8];
+//    const char source []= "sourtgdfce";
+//    printf ("Resultado de strlcpy e: %lu\n", ft_strlcpy(dest, source, 6));
+// }

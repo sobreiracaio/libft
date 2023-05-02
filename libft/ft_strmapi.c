@@ -6,7 +6,7 @@
 /*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 17:17:01 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/04/26 18:43:29 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/05/02 19:36:11 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,3 +33,16 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	result [i] = '\0';
 	return (result);
 }
+
+//
+// void function (unsigned int i, char* c)
+// {
+// 	*c = c[i] + 1;
+// }
+//
+//
+// int main ()
+// {
+// 	char *str = "hello";
+// 	printf("string criada por strmapi e: %s\n", ft_strmapi(str, &function);
+// }

@@ -6,7 +6,7 @@
 /*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 21:10:43 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/04/18 19:01:09 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/05/02 17:11:19 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,3 +22,8 @@ int	ft_isalnum(int c)
 	}
 	return (0);
 }
+
+// int main ()
+// {
+// 	printf ("E alfanumerico?: %i\n", ft_isalnum(')'));
+// }

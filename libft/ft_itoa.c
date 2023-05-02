@@ -6,7 +6,7 @@
 /*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/23 15:00:41 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/04/25 17:45:29 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/05/02 17:40:00 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,3 +63,8 @@ char	*ft_itoa(int n)
 	}
 	return (result);
 }
+
+// int main ()
+// {
+// 	printf("O resultado de itoa e: %s\n",ft_itoa(3453));
+// }

@@ -6,7 +6,7 @@
 /*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 16:59:37 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/04/19 18:19:13 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/05/02 17:21:35 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,3 +39,11 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		return (size + len_src);
 	return (len_dest + len_src);
 }
+
+// int main ()
+// {
+// 	char destiny[5] = "aaaa";
+//    const char thesource []= "sourtgdfce";
+//    size_t i = ft_strlcat(destiny,thesource,6) ;
+//	  printf ("Resultado de strlcat e: %lu\n", i );
+// }

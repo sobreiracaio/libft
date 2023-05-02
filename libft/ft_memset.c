@@ -6,7 +6,7 @@
 /*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 19:11:42 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/04/18 20:11:55 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/05/02 17:22:51 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,11 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
+
+// int main ()
+// {
+// 	char c[8];
+//
+//    printf("Resultado de memset e: %p\n", ft_memset(c,'$',8));
+//    printf("Valor no ponteiro de memset e: %s\n",c);
+// }

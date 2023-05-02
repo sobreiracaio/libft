@@ -6,7 +6,7 @@
 /*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/15 11:32:34 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/04/26 18:44:00 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/05/02 17:23:24 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,3 +30,12 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
+// int main ()
+// {
+// 	 char dest_m[8];
+//    char *src = "testando";
+//
+//    printf("Resultado de memcpy e: %p\n", ft_memcpy(dest_m, src, 5));
+//    printf("Valor no ponteiro de memcpy: %s\n", src);
+// }
