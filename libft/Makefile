@@ -16,7 +16,7 @@ SRC = ${PART1} ${PART2} ${BONUS}
 OBJS = ${SRC:.c=.o}
 HEADER = libft.h
 INCLUDE = -I .
-CC = gcc
+CC = cc
 RM = rm -f
 CFLAGS = -Wall -Wextra -Werror
 .c.o:
