@@ -6,7 +6,7 @@
 /*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 17:22:44 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/05/04 19:47:00 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/05/04 19:59:12 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,23 +24,21 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 
 // int main ()
 // {
-// 	t_list	*list;
-// 	t_list	*new_node;
+//     char *s = "eu sou primeiro node";
+//     char *s1 = "agora eu sou o primeiro node";
+//     char *s2 = "eu que sou agora";
+//     t_list    *list;
+//     t_list    *new_node;
 //
-// 	list = NULL;
-// 	new_node = ft_lstnew("eu sou primeiro node");
-// 	ft_lstadd_front(&list, new_node);
+//     list = NULL;
+//     new_node = ft_lstnew(s);
+//     ft_lstadd_front(&list, new_node);
 //
-// 	new_node = ft_lstnew("agora eu sou o primeiro node");
-// 	ft_lstadd_front(&list, new_node);
+//     new_node = ft_lstnew(s1);
+//     ft_lstadd_front(&list, new_node);
 //
-// 	new_node = ft_lstnew("eu que sou agora");
-// 	ft_lstadd_front(&list, new_node);
+//     new_node = ft_lstnew(s2);
+//     ft_lstadd_front(&list, new_node);
 //
-// 	void print(void *lst)
-// 	{
-// 		printf("O conteudo da lista neste nó é: %s\n", (char*)lst);
-// 	}
-//	
-// 	ft_lstiter(list, &print);
+//   
 // }
