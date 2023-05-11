@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
+/*   By: admin <admin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/10 18:33:51 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/05/11 19:51:41 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/05/11 22:39:23 by admin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,15 @@ int ft_printf_arg(const char *format, int i, va_list ap)
 {
 	if(format[i + 1] == '%')
 		return (ft_putchar(format[i + 1]));
-	if(format[i + 1] == 'c')
+	else if(format[i + 1] == 'c')
 		return (ft_putchar(va_arg(ap, int)));
+	else if(format[i + 1] == 's')
+		return (ft_putstr(va_arg(ap, char*)));
+	else if(format[i + 1] == 'p')
+		return (ft_putptr(va_arg(ap, void*)));
+		
 	return (0);
-	
-}
+	}
 
 int ft_printf(const char *format, ...)
 {
@@ -52,7 +56,8 @@ int ft_printf(const char *format, ...)
 
 
 
-// int main ()
-// {
-// 	ft_printf("asdas %c das %c d", 'A' , 'B');
-// }
+int main ()
+{
+	char * c = "abc";
+	ft_printf("O char é: %c.\n A string é: %s.\n O ponteiro é: %p.\n ", 'C' , "String", c);
+}

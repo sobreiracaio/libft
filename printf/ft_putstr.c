@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: admin <admin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/10 17:23:46 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/05/11 22:18:57 by admin            ###   ########.fr       */
+/*   Created: 2023/05/11 21:36:44 by admin             #+#    #+#             */
+/*   Updated: 2023/05/11 21:59:18 by admin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#include "ft_printf.h"
 
-# include <stdarg.h>
-# include <stdio.h>
-# include <limits.h>
-# include "libft/libft.h"
-
-int ft_putchar(char c);      //Put char
-int ft_putstr(char *str);    //Put string
-int ft_putptr(void *ptr);    //Put pointer
-
-
-#endif
+int ft_putstr(char *str)
+{
+    int len;
+    if(!str)
+    {
+        write (1,"(null)", 6);
+        return (6);
+    }
+    len = ft_strlen(str);
+    write(1,str,len);
+    return (len);
+}

@@ -3,16 +3,16 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+         #
+#    By: admin <admin@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/11 17:17:02 by crocha-s          #+#    #+#              #
-#    Updated: 2023/05/11 20:01:42 by crocha-s         ###   ########.fr        #
+#    Updated: 2023/05/11 22:18:09 by admin            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
 
-SRC = ft_printf.c ft_putchar.c
+SRC = ft_printf.c ft_putchar.c ft_putstr.c ft_putptr.c
 OBJS = ${SRC:.c=.o}
 
 CC = cc
@@ -42,5 +42,8 @@ fclean: clean
 		${RM} ${NAME}
 
 re: fclean all
+
+teste: re 
+		${CC} ${CFLAGS} ${INCLUDE} ft_printf.c ${NAME} -o teste
 
 .PHONY: all clean fclean re
