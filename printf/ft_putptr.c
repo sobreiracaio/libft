@@ -6,11 +6,11 @@
 /*   By: admin <admin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 22:10:42 by admin             #+#    #+#             */
-/*   Updated: 2023/05/12 00:11:20 by admin            ###   ########.fr       */
+/*   Updated: 2023/05/12 01:19:19 by admin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "ft_printf.h"
+#include "ft_printf.h"
 
 int ft_putptr(void *ptr)
 {
@@ -43,11 +43,12 @@ int ft_putptr(void *ptr)
     }
     write(1, buffer, i);
      write(1, "\n", 2);
+     return (1);
 }
 
-int main()
-{
-    int k;
-    k = 1;
-        ft_putptr(k);
-}
+// int main()
+// {
+//     int k;
+//     k = 1;
+//         ft_putptr(k);
+// }

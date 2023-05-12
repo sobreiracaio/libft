@@ -6,7 +6,7 @@
 /*   By: admin <admin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/10 18:33:51 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/05/11 22:39:23 by admin            ###   ########.fr       */
+/*   Updated: 2023/05/12 01:24:36 by admin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ int ft_printf_arg(const char *format, int i, va_list ap)
 		return (ft_putstr(va_arg(ap, char*)));
 	else if(format[i + 1] == 'p')
 		return (ft_putptr(va_arg(ap, void*)));
+	
 		
 	return (0);
 	}
@@ -59,5 +60,5 @@ int ft_printf(const char *format, ...)
 int main ()
 {
 	char * c = "abc";
-	ft_printf("O char é: %c.\n A string é: %s.\n O ponteiro é: %p.\n ", 'C' , "String", c);
+	ft_printf("O char é: %c.\nA string é: %s.\nO ptr é: %p.\nO decimal é:%d.\n ", 'C' , "String", c);
 }
