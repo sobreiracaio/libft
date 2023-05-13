@@ -5,14 +5,17 @@
 #                                                     +:+ +:+         +:+      #
 #    By: admin <admin@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/05/11 17:17:02 by crocha-s          #+#    #+#              #
-#    Updated: 2023/05/11 22:18:09 by admin            ###   ########.fr        #
+#    Created: 2023/05/12 22:55:39 by admin             #+#    #+#              #
+#    Updated: 2023/05/12 22:56:44 by admin            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
+
+
 NAME = libftprintf.a
 
-SRC = ft_printf.c ft_putchar.c ft_putstr.c ft_putptr.c
+SRC = ft_printf.c ft_putchar.c ft_putstr.c ft_putptr.c ft_putnbr.c ft_putunbr.c ft_uitoa.c
+
 OBJS = ${SRC:.c=.o}
 
 CC = cc
@@ -43,7 +46,4 @@ fclean: clean
 
 re: fclean all
 
-teste: re 
-		${CC} ${CFLAGS} ${INCLUDE} ft_printf.c ${NAME} -o teste
-
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re bonus
