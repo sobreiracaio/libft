@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: admin <admin@student.42.fr>                +#+  +:+       +#+        */
+/*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/10 18:33:51 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/05/12 23:26:21 by admin            ###   ########.fr       */
+/*   Updated: 2023/05/13 17:46:03 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,13 @@ int ft_printf_arg(const char *format, int i, va_list ap)
 	else if(format[i + 1] == 's')
 		buffer += (ft_putstr(va_arg(ap, char*)));
 	else if(format[i + 1] == 'p')
-		buffer += (ft_putptr(va_arg(ap, void*)));
+		buffer += (ft_putptr(va_arg(ap, unsigned long)));
 	else if (format[i + 1] == 'd' || format[i + 1] == 'i')
 		buffer += (ft_putnbr(va_arg(ap, int)));
 	else if(format[i + 1] == 'u')
 		buffer += (ft_putunbr(va_arg(ap, unsigned int)));
+	else if(format[i + 1] == 'x' || format[i + 1] == 'X')
+		buffer += (ft_puthex(va_arg(ap, unsigned int), format[i + 1]));
 		
 	return (buffer);
 	}
@@ -52,20 +54,18 @@ int ft_printf(const char *format, ...)
 			i++;
 		}
 		else
-		{
 			buffer += ft_putchar(format[i]);
-		}
-		i++;
+	i++;
+	
 	}
 	va_end(ap);
-	return (buffer);
+return (buffer);
 }
 
-
-
-// int main ()
-// {
-// 	char * c = "abc";
-// 	ft_printf("O char é: %c.\nA string é: %s.\nO ptr é: %p.\nO decimal é: %d.\n ", 'C' , "String", c, 245);
+//  int main ()
+//{
+	
+// 	ft_printf("O char é: %c.\nA string é: %s .\nO ptr é: %p .\nO decimal é: %d .\n ",'C' , "String", "abc", -245);
 // 	ft_printf("O unsigned int é: %u\n", 523);
-// }
+ // 	ft_printf(" %x %X \n", -99, 100);
+//  }

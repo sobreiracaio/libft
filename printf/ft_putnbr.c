@@ -3,37 +3,48 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: admin <admin@student.42.fr>                +#+  +:+       +#+        */
+/*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/12 18:32:10 by admin             #+#    #+#             */
-/*   Updated: 2023/05/12 18:47:32 by admin            ###   ########.fr       */
+/*   Updated: 2023/05/13 15:06:25 by crocha-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_putnbr(int n)
+unsigned int	n_lenght(int n)
 {
+	long	len;
 	long	nb;
-    unsigned int len;
 
 	nb = n;
-    len = 0;
+	len = 0;
+	if (nb == 0)
+	{
+		len = 1;
+		return (len);
+	}
 	if (nb < 0)
 	{
-		ft_putchar('-');
-		nb = -nb;
-        len++;
-	}	
-	if (nb > 9)
-	{
-		ft_putnbr(nb / 10);
-		ft_putnbr(nb % 10);
-        len++;
+		nb = nb * -1;
+		len++;
 	}
-	else
+	while (nb > 0)
 	{
-		ft_putchar(nb + '0');
+		nb = nb / 10;
+		len++;
 	}
-   return (len); 
+	return (len);
+}
+
+int ft_putnbr(int nb)
+{
+    int len;
+    char *number;
+    len = n_lenght(nb);
+    number = ft_itoa(nb);
+    write(1, number, len);
+    free(number);
+    return (len);
+    
 }
