@@ -3,25 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   ft_puthex.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: crocha-s <crocha-s@student.42.fr>          +#+  +:+       +#+        */
+/*   By: admin <admin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/13 16:41:57 by crocha-s          #+#    #+#             */
-/*   Updated: 2023/05/13 18:23:40 by crocha-s         ###   ########.fr       */
+/*   Updated: 2023/05/15 21:05:23 by admin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int hex_len(int nb)
+int hex_len(unsigned int nb)
 {
-    unsigned int len;
+    int len;
+    
+    if(nb == 0)
+        return (1);
 
     len = 0;
-    while (nb != 0)
+    while (nb)
     {
-		
-        nb /= 16;
 		len++;
+        nb /= 16;
+		
         
     }
     return (len);
@@ -41,9 +44,9 @@ void ft_printhex(unsigned int nb, const char format)
         else
 		{
 			if(format == 'x')
-            	ft_putchar(nb - 10 + 'a');
+            	ft_putchar((nb - 10 + 'a'));
 			else if (format == 'X')
-				ft_putchar(nb - 10 + 'A');
+				ft_putchar((nb - 10 + 'A'));
 		}
         
                 
@@ -53,23 +56,19 @@ void ft_printhex(unsigned int nb, const char format)
 
 int ft_puthex(unsigned int nb, const char format)
 {
-    int len;
+   int len;
 
    len = 0;
+
+   
+  
    if (nb == 0)
    {
        ft_putchar('0');
 	   return (1);
    }
-   else
-   {
-	if(format == 'x')
-		len = ft_putstr("0x");
-	else if(format == 'X')
-		len = ft_putstr("0X");
-    ft_printhex(nb, format);
+  	ft_printhex(nb, format);
     len += hex_len(nb);
-	}
 	return (len);
    }
    
